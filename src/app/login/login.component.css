@@ -1,6 +1,13 @@
+.content-body {
+  min-height: 100%;
+  padding: 60px 1rem;
+  background-color: #c6d47f;
+  display: block;
+}
+
 mat-card {
   max-width: 400px;
-  margin: 2em auto;
+  margin: 15rem auto;
   text-align: center;
   max-height: 600px;
 }
