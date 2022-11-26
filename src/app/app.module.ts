@@ -12,7 +12,11 @@ import { MatCardModule } from '@angular/material/card';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatIconModule } from '@angular/material/icon';
-
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { Page1Component } from './page1/page1.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -20,6 +24,9 @@ import { MatIconModule } from '@angular/material/icon';
     AppComponent,
     LoginComponent,
     HomeComponent,
+    Page1Component,
+    NavbarComponent,
+    FooterComponent,
 
   ],
   imports: [
@@ -34,6 +41,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatNativeDateModule,
     ReactiveFormsModule,
     MatIconModule,
+    MatToolbarModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
