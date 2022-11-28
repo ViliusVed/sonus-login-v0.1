@@ -6,14 +6,15 @@
         </mat-card-title>
         <form>
             <div>
-                <mat-form-field appearance="fill">
+                <mat-form-field [style.width.px]=327 appearance="fill">
                     <mat-label>Email</mat-label>
                     <input matInput placeholder="pat@example.com" [formControl]="email" required>
                     <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
                 </mat-form-field>
             </div>
             <div>
-                <mat-form-field appearance="fill">
+                    <mat-error *ngIf="password.invalid">{{getpasswordErrorMessage()}}</mat-error>
+                <mat-form-field [style.width.px]=327 appearance="fill">
                     <mat-label>Password</mat-label>
                     <input matInput [type]="hide ? 'password' : 'text'" [formControl]="password" required>
                     <mat-error *ngIf="password.invalid">{{getpasswordErrorMessage()}}</mat-error>
@@ -23,7 +24,9 @@
                     </button>
                 </mat-form-field>
             </div>
-            <button class="login-button"  mat-flat-button color="primary">Login</button>
+            
+            <button class="login-button"  mat-flat-button color="primary" [routerLink]="[ '.', 'home' ]">Login</button><br>
+            <a [routerLink]="[ '.', 'registration' ]"> Registration</a>
         </form>
     </mat-card-content>
 </mat-card>

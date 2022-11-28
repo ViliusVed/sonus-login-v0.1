@@ -17,6 +17,7 @@ import { Page1Component } from './page1/page1.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { RegistrationComponent } from './registration/registration.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { FooterComponent } from './footer/footer.component';
     Page1Component,
     NavbarComponent,
     FooterComponent,
+    RegistrationComponent,
 
   ],
   imports: [

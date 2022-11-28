@@ -1,0 +1,22 @@
+.content-body {
+    min-height: 100%;
+    padding: 10px 1rem;
+    background-color: #c6d47f;
+    display: block;
+  }
+  
+  mat-card {
+    max-width: 500px;
+    margin: 15rem auto;
+    text-align: left;
+    max-height: 600px;
+  }
+  
+  
+  
+  
+  .login-button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+   }
+   
